@@ -29,17 +29,10 @@ def debug_print(title, data):
 # ENV / API KEYS
 # ==================================
 
-HF_API_KEY = os.getenv("HF_API_KEY", "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")
-BIOPORTAL_API_KEY = os.getenv("BIOPORTAL_API_KEY", "f87f8918-4458-4785-85e5-dd52ec4e7995")
+HF_API_KEY = os.getenv("HF_API_KEY")
+BIOPORTAL_API_KEY = os.getenv("BIOPORTAL_API_KEY")
 
 BIOPORTAL_BASE = "https://data.bioontology.org"
-
-# (Opsional, tidak dipakai langsung untuk sekarang)
-CLIENT_ID = "36e39acd-27ea-4b9e-9258-46efa96e929b_1328c4bc-5dc8-497a-bb25-26a70f2e1d75"
-CLIENT_SECRET = "e8Hi8A99Qy5qaB5k011UHUOzDb4qTWF03Qw9VQIJVCw="
-TOKEN_URL = "https://icdaccessmanagement.who.int/connect/token"
-ICD_BASE = "https://id.who.int/icd"
-
 
 # ==================================
 # 0. SETUP HF LLM CLIENT
